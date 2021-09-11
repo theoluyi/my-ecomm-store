@@ -1,0 +1,23 @@
+[
+  {
+    "id": "price_1JYN30Iet9nr2fr2xk7mAXfK",
+    "title": "Monkey",
+    "description": "Give this wacky chimpanzee the gift of a social panopticon",
+    "price": 20,
+    "image": "/images/monkey.jpg"
+  },
+  {
+    "id": "price_1JYN2hIet9nr2fr2H3xDCZ0M",
+    "title": "Squirrel",
+    "description": "Ready to see this cool squirrel's address get leaked on Twitter?",
+    "price": 10,
+    "image": "/images/squirrel.jpg"
+  },
+  {
+    "id": "price_1JYN1fIet9nr2fr2AZeAOmmA",
+    "title": "Honeybee",
+    "description": "Protect this bee from the corrosive effects of privacy and autonomy",
+    "price": 5,
+    "image": "/images/honeybee.jpg"
+  }
+]
