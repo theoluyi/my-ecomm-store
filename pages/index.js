@@ -1,8 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import products from '../products.json'
+import { description } from 'platform'
 
 export default function Home() {
+
+  console.log("products: ", products)
+
   return (
     <div className={styles.container}>
       <Head>
@@ -24,32 +29,19 @@ export default function Home() {
           the creature of your choice
         </p>
 
-
-
         <ul className={styles.grid}>
-          <li className={styles.card}>
-            <a href="https://github.com/vercel/next.js/tree/master/examples">
-              <img src="/images/monkey.jpg" alt="Monkey"/>
-              <h2>Monkey</h2>
-              <p>Give this wacky chimpanzee the gift of a social panopticon</p>
-            </a>
-          </li>
-
-          <li className={styles.card}>
-            <a href="https://nextjs.org/learn">
-            <img src="/images/squirrel.jpg" alt="Squirrel"/>
-              <h2>Squirrel</h2>
-              <p>Ready to see this cool squirrel's address get leaked on Twitter?</p>
-            </a>
-          </li>
-
-          <li className={styles.card}>
-            <a href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"> 
-              <img src="/images/honeybee.jpg" alt="honeybee"/>
-              <h2>Honeybee</h2>
-              <p>Protect this bee from the erosive effects of privacy and autonomy</p>
-            </a>
-          </li>
+          {products.map( product => {
+            const {id, title, description, price, image} = product;
+            return (
+              <li key={id} className={ styles.card }>
+                <a href="https://github.com/vercel/next.js/tree/master/examples">
+                  <img src={image} alt={ title }/>
+                  <h2>{ title } – ${ price }</h2>
+                  <p>{ description }</p>
+                </a>
+              </li>
+            )
+          })}
         </ul>
       </main>
 
