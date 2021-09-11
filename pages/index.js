@@ -18,7 +18,7 @@ export default function Home() {
 
         <p className={styles.description}>
           Inspired by the U.S. Supreme Court's recent 
-          decision not to discourage vigilantism.
+          decision <strong>not</strong> to discourage vigilantism.
           <br/>
           100% of your payment goes toward doxxing and crowd-sourced hunting
           the creature of your choice
@@ -26,37 +26,31 @@ export default function Home() {
 
 
 
-        <div className={styles.grid}>
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <img src="/images/monkey.jpg" alt="Monkey"/>
-            <h2>Monkey</h2>
-            <p>Give this wacky chimpanzee the gift of a social panopticon</p>
-          </a>
+        <ul className={styles.grid}>
+          <li className={styles.card}>
+            <a href="https://github.com/vercel/next.js/tree/master/examples">
+              <img src="/images/monkey.jpg" alt="Monkey"/>
+              <h2>Monkey</h2>
+              <p>Give this wacky chimpanzee the gift of a social panopticon</p>
+            </a>
+          </li>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-          <img src="/images/squirrel.jpg" alt="Squirrel"/>
-            <h2>Squirrel</h2>
-            <p>Ready to have this cool gal's address get leaked on Twitter?</p>
-          </a>
+          <li className={styles.card}>
+            <a href="https://nextjs.org/learn">
+            <img src="/images/squirrel.jpg" alt="Squirrel"/>
+              <h2>Squirrel</h2>
+              <p>Ready to see this cool squirrel's address get leaked on Twitter?</p>
+            </a>
+          </li>
 
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <img src="/images/european.jpg" alt="Human"/>
-            <h2>Human</h2>
-            <p>Teach freckles a thing or two about family values</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          > 
-            <img src="/images/honeybee.jpg" alt="honeybee"/>
-            <h2>Honeybee</h2>
-            <p>Protect this bee from the erosive effects of privacy and autonomy</p>
-          </a>
-        </div>
+          <li className={styles.card}>
+            <a href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"> 
+              <img src="/images/honeybee.jpg" alt="honeybee"/>
+              <h2>Honeybee</h2>
+              <p>Protect this bee from the erosive effects of privacy and autonomy</p>
+            </a>
+          </li>
+        </ul>
       </main>
 
       <footer className={styles.footer}>
