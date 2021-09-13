@@ -6,8 +6,6 @@ import { description } from 'platform'
 
 export default function Home() {
 
-  console.log("products: ", products)
-
   return (
     <div className={styles.container}>
       <Head>
@@ -22,10 +20,10 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Inspired by the U.S. Supreme Court's recent 
+          Inspired by the U.S. Supreme Court&apos;s recent 
           decision <strong>not</strong> to discourage vigilantism.
           <br/>
-          100% of your payment goes toward doxxing and crowd-sourced hunting
+          100% of your payment goes toward doxxing and crowd-sourced hunting of
           the creature of your choice
         </p>
 
